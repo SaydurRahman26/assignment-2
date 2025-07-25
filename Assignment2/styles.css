@@ -18,6 +18,7 @@
     margin: 0 auto;
 }
 
+
 /*navbar style*/
 .navbar{
     display: flex;
@@ -172,8 +173,143 @@
 }
 
 
+
+/*discount section*/
+.discount-section{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    filter: brightness(90%)
+}
+.discount{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+}
+.bloom-ana{
+    width: 50%;
+
+}
+.bloom{
+    background-image: url('../assets/deal-bloom.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.ana{
+    background-image: url('../assets/deal-ana.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.zabo{
+    background-image: url('../assets/deal-zabo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 433px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bloom-ana-title{
+    font-size: 1.25rem;
+    font-weight: 700px;
+    color: #FFFFFF;
+}
+.zabo-title{
+    font-size: 2.5rem;
+    font-weight: 700px;
+    color: #FFFFFF;
+}
+.shop-now-bloom-ana{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500px;
+}
+.shop-now{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-weight: 600px;
+}
+
+
+
+/*join the colorful branch*/
+.input-field{
+    background-image: url('../assets/news-letter-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 533px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.input-field-title{
+    font-size: 3.125rem;
+    color: #FFFFFF;
+}
+.input-email{
+    width: 644px;
+    height: 47px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+.subscribe{
+    width: 186px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    border: none;
+}
+
+
+
+/*footer style*/
+.footer-items{
+    max-width: 1120px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list-link ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+.footer-list{
+    list-style: none;
+    gap: 32px;
+}
+.footer-link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+}
+.footer-icons{
+    margin-left: 24px;
+}
+
+
+
 /*iphone 14*/
-@media screen and (min-width: 390px) and (max-width: 844px){
+@media screen and (max-width: 576px){
     .navbar{
         margin: 0 16px;
     }
@@ -200,4 +336,20 @@
     .trusted-badge{
         display: none;
     }
+    .discount{
+        flex-direction: column;
+    }
+
+
+
+
+
+    .footer-items{
+        flex-direction: column;
+    }
+    .footer-list-link ul{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+
 }
