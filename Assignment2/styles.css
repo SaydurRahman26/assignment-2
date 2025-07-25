@@ -263,14 +263,17 @@
     font-size: 3.125rem;
     color: #FFFFFF;
 }
+.input-title{
+    width: 830px;
+}
 .input-email{
-    width: 644px;
+    width: 75%;
     height: 47px;
     color: rgba(0, 0, 0, 0.5);
     border: none;
 }
 .subscribe{
-    width: 186px;
+    width: 20%;
     height: 50px;
     color: #FFFFFF;
     background-color: #E95A08;
@@ -340,6 +343,9 @@
     .discount{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .bloom-ana{
+        width: 100%;
     }
     .input-field img{
         width: 100%;
